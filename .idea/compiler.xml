@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mq_provider" />
+        <module name="mq_consumer" />
+        <module name="mq_common" />
+        <module name="mq" />
+        <module name="mq_server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mq" options="-parameters" />
+      <module name="mq_common" options="-parameters" />
+      <module name="mq_consumer" options="-parameters" />
+      <module name="mq_provider" options="-parameters" />
+      <module name="mq_server" options="-parameters" />
+    </option>
+  </component>
+</project>
